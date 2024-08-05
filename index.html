@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -29,6 +30,13 @@
         .emoji {
             font-size: 1.5em;
             margin-right: 10px;
+        }
+        .code-block {
+            background-color: #f4f4f4;
+            border-left: 3px solid #ccc;
+            padding: 10px;
+            margin: 20px 0;
+            overflow-x: auto;
         }
     </style>
 </head>
@@ -74,10 +82,40 @@
             To use me, Jean-Michel Code, follow these steps:
         </p>
         <ol>
-            <li><span class="emoji">1️⃣</span><strong>Access the Chatbot:</strong> Go to the following link to access me: <a href="https://chatgpt.com/g/g-ljMhMsdM5-jean-michel-code">Jean-Michel Code Chatbot</a>.</li>
+            <li><span class="emoji">1️⃣</span><strong>Access the Chatbot:</strong> Go to the following link to access me: <a href="https://chat.openai.com/chat">Jean-Michel Code Chatbot</a>.</li>
             <li><span class="emoji">2️⃣</span><strong>Ask Questions:</strong> You can ask me questions related to Python, SQL, data engineering, and related technologies. I can provide code optimization tips, best practices, and help with repetitive tasks like generating docstrings.</li>
             <li><span class="emoji">3️⃣</span><strong>Follow Guidance:</strong> Use the guidance and suggestions I provide to improve your code's efficiency, readability, and functionality.</li>
         </ol>
+        <h2>🔍 Example</h2>
+        <p>Here is an example of a simple function that sums two numbers. The original function is not optimized and lacks a docstring:</p>
+        <div class="code-block">
+            <pre>
+def add_numbers(a, b):
+    return a + b
+            </pre>
+        </div>
+        <p>Here is the reviewed version with a detailed docstring and typing:</p>
+        <div class="code-block">
+            <pre>
+def add_numbers(a: int, b: int) -> int:
+    """
+    Add two numbers together.
+
+    Parameters
+    ----------
+    a : int
+        The first number.
+    b : int
+        The second number.
+
+    Returns
+    -------
+    int
+        The sum of the two numbers.
+    """
+    return a + b
+            </pre>
+        </div>
         <h2>📞 Contact</h2>
         <p>
             Feel free to reach out to me on GitHub for any collaboration or project.
